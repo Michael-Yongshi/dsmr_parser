@@ -254,7 +254,7 @@ Example to get some of the values:
      # Using the active tariff to determine the electricity being used and
      # delivered for the right tariff.
      active_tariff = telegram[obis_references.ELECTRICITY_ACTIVE_TARIFF]
-     active_tariff = int(tariff.value)
+     active_tariff = int(active_tariff.value)
 
      electricity_used_total = telegram[obis_references.ELECTRICITY_USED_TARIFF_ALL[active_tariff - 1]]
      electricity_delivered_total = telegram[obis_references.ELECTRICITY_DELIVERED_TARIFF_ALL[active_tariff - 1]]
